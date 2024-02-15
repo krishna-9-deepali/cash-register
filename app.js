@@ -41,6 +41,7 @@ purchase.addEventListener("click", () => {
     alert(" Cash Amount should be greater or equal to Bill Amount. ");
   } else if (cashAmt == billAmt) {
     statusMsg.innerHTML = "<strong>Status: OPEN </strong>";
+    changeDueMsg.style.display = "none";
     priceScreen.innerText = `Total : ${billAmt}`;
   } else if (cashAmt > billAmt) {
     priceScreen.innerText = `Total : ${billAmt}`;
