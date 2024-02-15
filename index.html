@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <main>
+      <h1>Cash Register</h1>
+      <p id="status" class="mt"><strong></strong></p>
+      <div id="change-due" class="mt">
+        <p>Two-thousand :<span></span></p>
+        <p>Five-hundred :<span></span></p>
+        <p>One-hundred :<span></span></p>
+        <p>Fifty :<span></span></p>
+        <p>Twenty:<span></span></p>
+        <p>Ten :<span></span></p>
+        <p>Five :<span></span></p>
+        <p>One :<span></span></p>
+      </div>
+      <div>
+        <p class="mt">Enter Bill amount from customer:</p>
+        <input type="number" id="bill-amonunt" class="user-input mt" />
+        <p class="mt">Enter Cash amount from customer:</p>
+        <input type="number" id="cash-amonunt" class="user-input mt" />
+      </div>
+      <button id="purchase" class="purchase-btn mt">Purchase</button>
+      <div class="container">
+        <div class="top-dispaly-screen-container">
+          <p class="price-screen mt">Total : 0</p>
+          <div class="connector"></div>
+        </div>
+        <div class="top-register">
+          <div class="btns-container">
+            <button class="btn"></button><button class="btn"></button
+            ><button class="btn"></button><button class="btn"></button
+            ><button class="btn"></button><button class="btn"></button
+            ><button class="btn"></button><button class="btn"></button
+            ><button class="btn"></button>
+          </div>
+          <div class="cash-drawer-display">
+            <p><strong>Change in drawer</strong></p>
+            <p>Two-thousand :<span></span></p>
+            <p>Five-hundred :<span></span></p>
+            <p>One-hundred :<span></span></p>
+            <p>Fifty :<span></span></p>
+            <p>Twenty:<span></span></p>
+            <p>Ten :<span></span></p>
+            <p>Five :<span></span></p>
+            <p>One :<span></span></p>
+          </div>
+        </div>
+        <div class="bottom-register">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
