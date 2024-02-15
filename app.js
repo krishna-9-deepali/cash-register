@@ -28,8 +28,8 @@ function dispalyCashDrawer() {
   }
 }
 purchase.addEventListener("click", () => {
-  let billAmt = billAmonunt.value;
-  let cashAmt = cashAmonunt.value;
+  let billAmt = +billAmonunt.value; //+unary opretor to convert string to number
+  let cashAmt = +cashAmonunt.value;
   // console.log(cashAmt);
   if (billAmt == "") {
     alert("Please enter the Bill Amount .");
@@ -38,6 +38,7 @@ purchase.addEventListener("click", () => {
   } else if (cashAmt == "") {
     alert(" Please enter the Cash Amount .");
   } else if (cashAmt < billAmt) {
+    debugger;
     alert(" Cash Amount should be greater or equal to Bill Amount. ");
   } else if (cashAmt == billAmt) {
     statusMsg.innerHTML = "<strong>Status: OPEN </strong>";
